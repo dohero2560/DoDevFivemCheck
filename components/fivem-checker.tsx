@@ -305,7 +305,7 @@ export default function FivemChecker() {
       <div className="space-y-8">
         {/* Header Section */}
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
             FiveM Player Identifier Checker
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -319,7 +319,7 @@ export default function FivemChecker() {
           <div className="lg:col-span-2 space-y-8">
             {/* Search Section */}
             <Card className="w-full border-none shadow-lg bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-              <CardHeader className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-t-lg">
+              <CardHeader className="bg-gradient-to-r from-pink-500 to-rose-500 rounded-t-lg">
                 <CardTitle className="flex items-center gap-2 text-white">
                   <Server className="w-5 h-5" />
                   Server Information
@@ -335,7 +335,7 @@ export default function FivemChecker() {
                         placeholder="Enter server IP"
                         value={ipAddress}
                         onChange={(e) => setIpAddress(e.target.value)}
-                        className="w-full border-gray-200 dark:border-gray-700 focus:border-blue-500 dark:focus:border-blue-400"
+                        className="w-full border-gray-200 dark:border-gray-700 focus:border-pink-500 dark:focus:border-pink-400"
                       />
                     </div>
                     <div className="space-y-2">
@@ -345,7 +345,7 @@ export default function FivemChecker() {
                         placeholder="Enter port"
                         value={port}
                         onChange={(e) => setPort(e.target.value)}
-                        className="w-full border-gray-200 dark:border-gray-700 focus:border-blue-500 dark:focus:border-blue-400"
+                        className="w-full border-gray-200 dark:border-gray-700 focus:border-pink-500 dark:focus:border-pink-400"
                       />
                     </div>
                   </div>
@@ -359,10 +359,10 @@ export default function FivemChecker() {
                           <Button
                             key={index}
                             variant="outline"
-                            className="w-full justify-start hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-200 dark:hover:border-blue-800 transition-colors"
+                            className="w-full justify-start hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:border-pink-200 dark:hover:border-pink-800 transition-colors"
                             onClick={() => loadSavedIP(item.ip, item.port)}
                           >
-                            <Server className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" />
+                            <Server className="w-4 h-4 mr-2 text-pink-600 dark:text-pink-400" />
                             <span className="truncate">{item.name}</span>
                             <span className="ml-2 text-muted-foreground text-sm">
                               ({item.ip}:{item.port})
@@ -377,7 +377,7 @@ export default function FivemChecker() {
                     <Button
                       onClick={fetchServerData}
                       disabled={loading}
-                      className="w-full md:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="w-full md:w-auto bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       {loading ? (
                         <div className="flex items-center gap-2">
@@ -405,7 +405,7 @@ export default function FivemChecker() {
 
             {serverInfo && (
               <Card className="border-none shadow-lg bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-                <CardHeader className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-t-lg">
+                <CardHeader className="bg-gradient-to-r from-pink-500 to-rose-500 rounded-t-lg">
                   <CardTitle className="flex items-center gap-2 text-white">
                     <Signal className="w-5 h-5" />
                     Server Status
@@ -420,7 +420,7 @@ export default function FivemChecker() {
                     <div className="space-y-2">
                       <Label className="text-gray-700 dark:text-gray-300">Players Online</Label>
                       <p className="text-lg font-medium flex items-center gap-2 text-gray-900 dark:text-gray-100">
-                        <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                        <Users className="w-5 h-5 text-pink-600 dark:text-pink-400" />
                         {serverInfo.players.length}
                       </p>
                     </div>
@@ -434,7 +434,7 @@ export default function FivemChecker() {
           {serverInfo && (
             <div className="lg:col-span-1">
               <Card className="sticky top-8 border-none shadow-lg bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-                <CardHeader className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-t-lg">
+                <CardHeader className="bg-gradient-to-r from-pink-500 to-rose-500 rounded-t-lg">
                   <div className="flex items-center justify-between">
                     <CardTitle className="flex items-center gap-2 text-white">
                       <Users className="w-5 h-5" />
@@ -471,11 +471,11 @@ export default function FivemChecker() {
                             .map((player) => (
                               <TableRow 
                                 key={player.id} 
-                                className="hover:bg-blue-50 dark:hover:bg-blue-900/20 cursor-pointer transition-colors"
+                                className="hover:bg-pink-50 dark:hover:bg-pink-900/20 cursor-pointer transition-colors"
                                 onClick={() => handleViewDetails(player)}
                               >
                                 <TableCell className="font-medium text-gray-900 dark:text-gray-100">{player.id}</TableCell>
-                                <TableCell className="max-w-[150px] truncate text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                <TableCell className="max-w-[150px] truncate text-gray-900 dark:text-gray-100 hover:text-pink-600 dark:hover:text-pink-400 transition-colors">
                                   {player.name}
                                 </TableCell>
                                 <TableCell>
@@ -503,7 +503,7 @@ export default function FivemChecker() {
           <div className="text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Developer By{" "}
-              <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
+              <span className="font-semibold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent hover:from-pink-600 hover:to-rose-600 transition-all duration-300">
                 DooDevc
               </span>
             </p>
@@ -514,7 +514,7 @@ export default function FivemChecker() {
         {playerData && (
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogContent className="max-w-5xl w-[90vw] max-h-[90vh] overflow-y-auto border-none shadow-xl bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-              <DialogTitle className="text-2xl font-bold flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+              <DialogTitle className="text-2xl font-bold flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent mb-4">
                 <User className="w-6 h-6" />
                 Player Details
               </DialogTitle>
@@ -541,12 +541,12 @@ export default function FivemChecker() {
                   <div className="space-y-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4">
                     <div className="space-y-2">
                       <Label className="text-sm font-medium">Player Name</Label>
-                      <p className="text-lg font-medium">{playerData.name}</p>
+                      <p className="text-lg font-medium text-pink-600 dark:text-pink-400">{playerData.name}</p>
                     </div>
                     <div className="space-y-2">
                       <Label className="text-sm font-medium">Player ID</Label>
                       <div className="flex items-center gap-2">
-                        <p className="text-lg font-medium">{playerData.id}</p>
+                        <p className="text-lg font-medium text-pink-600 dark:text-pink-400">{playerData.id}</p>
                         <Button
                           variant="ghost"
                           size="icon"
@@ -558,7 +558,7 @@ export default function FivemChecker() {
                     </div>
                     <div className="space-y-2">
                       <Label className="text-sm font-medium">Ping</Label>
-                      <p className="text-lg font-medium">{playerData.ping}ms</p>
+                      <p className="text-lg font-medium text-pink-600 dark:text-pink-400">{playerData.ping}ms</p>
                     </div>
                   </div>
                 </div>
@@ -578,7 +578,7 @@ export default function FivemChecker() {
                         linkUrl={getDiscordFriendLink(getDiscordId(playerData.identifiers))}
                         additionalInfo={
                           <div className="flex items-center gap-2 mt-1">
-                            <span className="text-sm text-gray-500 dark:text-gray-400">
+                            <span className="text-sm text-pink-500 dark:text-pink-400">
                               {discordUsername !== "Loading..." ? discordUsername : "กำลังโหลด..."}
                             </span>
                             {discordUsername !== "Loading..." && (
@@ -586,7 +586,7 @@ export default function FivemChecker() {
                                 href={getDiscordFriendLink(getDiscordId(playerData.identifiers)) || '#'}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-sm text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+                                className="text-sm text-pink-500 hover:text-pink-600 dark:text-pink-400 dark:hover:text-pink-300"
                               >
                                 <i className="fas fa-user-plus"></i> เพิ่มเพื่อน
                               </a>
@@ -607,7 +607,7 @@ export default function FivemChecker() {
                               href={getSteamUrl(playerData.identifiers)}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-sm text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+                              className="text-sm text-pink-500 hover:text-pink-600 dark:text-pink-400 dark:hover:text-pink-300"
                             >
                               <i className="fas fa-external-link-alt"></i> ดูโปรไฟล์ Steam
                             </a>
@@ -629,7 +629,7 @@ export default function FivemChecker() {
                       <InfoRow
                         label="IP"
                         value={formatIP(getIdentifierValue(playerData.identifiers, "ip"))}
-                        icon={<i className="fas fa-network-wired text-blue-500 w-5 h-5 flex items-center justify-center"></i>}
+                        icon={<i className="fas fa-network-wired text-pink-500 w-5 h-5 flex items-center justify-center"></i>}
                         canCopy
                       />
                     </div>
@@ -734,7 +734,7 @@ const InfoRow = ({
               href={linkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1 hover:text-blue-500 dark:hover:text-blue-400"
+              className="p-1 hover:text-pink-500 dark:hover:text-pink-400"
             >
               <ExternalLink className="w-4 h-4" />
             </a>
