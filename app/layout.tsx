@@ -11,32 +11,55 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "FiveM Player Identifier Checker | Check Player IDs & Server Info",
-    template: "%s | FiveM Player Identifier Checker"
+    default: "FIVEMCHECK - FiveM Player Identifier & Server Checker | #1 FiveM Tools",
+    template: "%s | FIVEMCHECK - FiveM Tools"
   },
-  description: "Free tool to check FiveM player identifiers, server information, and player details. Easily verify player IDs, server IP, port, and more for FiveM servers.",
-  keywords: ["FiveM", "player identifier", "server checker", "FiveM server", "player ID", "server IP", "FiveM tools"],
-  authors: [{ name: "FiveM Checker" }],
-  creator: "FiveM Checker",
-  publisher: "FiveM Checker",
+  description: "FIVEMCHECK - The #1 FiveM Player Identifier & Server Checker. Check FiveM player IDs, server information, and player details instantly. Free FiveM tools for server owners and players.",
+  keywords: [
+    "FIVEMCHECK",
+    "FiveM checker",
+    "FiveM player identifier",
+    "FiveM server checker",
+    "FiveM tools",
+    "FiveM player ID",
+    "FiveM server info",
+    "FiveM player lookup",
+    "FiveM server status",
+    "FiveM player details"
+  ],
+  authors: [{ name: "FIVEMCHECK" }],
+  creator: "FIVEMCHECK",
+  publisher: "FIVEMCHECK",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   metadataBase: new URL('https://fivem-checker.vercel.app'),
+  alternates: {
+    canonical: 'https://fivem-checker.vercel.app',
+  },
   openGraph: {
-    title: "FiveM Player Identifier Checker",
-    description: "Check FiveM player identifiers and server information easily",
+    title: "FIVEMCHECK - FiveM Player Identifier & Server Checker",
+    description: "The #1 FiveM Player Identifier & Server Checker. Check player IDs, server information, and player details instantly.",
     url: 'https://fivem-checker.vercel.app',
-    siteName: 'FiveM Player Identifier Checker',
+    siteName: 'FIVEMCHECK',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://fivem-checker.vercel.app/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'FIVEMCHECK - FiveM Tools',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FiveM Player Identifier Checker',
-    description: 'Check FiveM player identifiers and server information easily',
+    title: 'FIVEMCHECK - FiveM Player Identifier & Server Checker',
+    description: 'The #1 FiveM Player Identifier & Server Checker. Check player IDs, server information, and player details instantly.',
+    images: ['https://fivem-checker.vercel.app/og-image.png'],
   },
   robots: {
     index: true,
@@ -50,8 +73,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-site-verification', // Add your Google verification code here
+    google: 'your-google-site-verification',
   },
+  category: 'FiveM Tools',
+  classification: 'FiveM Player Identifier & Server Checker',
 }
 
 export default function RootLayout({
@@ -63,6 +88,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GoogleAnalytics />
+        <link rel="canonical" href="https://fivem-checker.vercel.app" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="rating" content="general" />
+        <meta name="distribution" content="global" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
