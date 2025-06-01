@@ -1,0 +1,79 @@
+[
+  {
+    "timestamp": "2025-06-01T09:22:07.880Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  },
+  {
+    "timestamp": "2025-06-01T09:22:08.152Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  },
+  {
+    "timestamp": "2025-06-01T09:22:35.475Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  },
+  {
+    "timestamp": "2025-06-01T09:23:19.322Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  },
+  {
+    "timestamp": "2025-06-01T09:23:21.111Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  },
+  {
+    "timestamp": "2025-06-01T09:23:22.140Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  },
+  {
+    "timestamp": "2025-06-01T09:23:22.838Z",
+    "ip": "49.228.254.227",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+    "screenResolution": "1920x1080",
+    "visitDuration": 0,
+    "pagePath": "/",
+    "pageSequence": 1,
+    "referrer": "direct",
+    "language": "th-TH"
+  }
+]
